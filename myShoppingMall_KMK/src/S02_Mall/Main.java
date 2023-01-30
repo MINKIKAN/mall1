@@ -18,11 +18,12 @@ public class Main {
 		MallController.getInstance().init();
 		AdminController.getInstance().init();
 		MemberController.getInstance().init(new MemberDAO());
-        ItemController.getInstance().init(new ItemDAO());
-        CartController.getInstance().init(new CartDAO());
-        MallController.getInstance().menumall();
-        BoardController.getInstance().init(new BoardDAO());
-        Util.sc.close();
+		ItemController.getInstance().init(new ItemDAO());
+		CartController.getInstance().init(new CartDAO());
+		BoardController.getInstance().init(new BoardDAO());
+		MallController.getInstance().menumall();
+		Util.sc.close();
+
 	}
 
 }
